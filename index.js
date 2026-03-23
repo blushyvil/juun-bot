@@ -99,5 +99,4 @@ function saveResponses() {
   fs.writeFileSync('responses.json', JSON.stringify(responses, null, 2))
 }
 
-const PORT = process.env.PORT || 3000
-app.listen(PORT, () => console.log(`bot is running on port ${PORT}`))
+app.listen(process.env.PORT || 3000, () => console.log('must say juun is cute!'))
